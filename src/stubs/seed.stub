@@ -1,0 +1,24 @@
+<?php
+
+namespace  database\seeders;
+
+use Eloquent\Migrations\Seeds\Seeder;
+use support\Db;
+class {{class}} extends Seeder
+{
+
+    /**
+     * Auto generated seed file
+     *
+     * @return void
+     */
+    public function run() :void
+    {
+        {{prerun_event}}
+
+        Db::table('{{table}}')->delete();
+        {{insert_statements}}
+
+
+    }
+}
